@@ -1,5 +1,6 @@
 import React from 'react'
-import './index.css'
+// import './../Hero/Hero.css'
+import './index.scss'
 // import logo from './../../Assets/Images/logo.png'
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
@@ -7,22 +8,22 @@ import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="main-panel card border footer-bg old_home_footer" id="footer">
-    <div className="container-fluid container-fluid-90 pb-5 sv_footer_popup p-5">
-        <div className="row">
+    <footer  className="main-panel card border footer-bg old_home_footer container " id="footer" style={{'width': '100vw' , 'background-color': '#fff'}}>
+    <div className="container-fluid container-fluid-90  sv_footer_popup " style={{'width': '100%' , 'background-color': '#fff'}} >
+        <div className="row ">
             <div className="col-6 col-sm-3 mt-4">
-                <div className="row">
+                <div className="row" >
                     <div className="col-md-12 text-center">
-                        <div className="footerlogo">
+                        <div className="container row align-items-start">
                         <div className="footerlogo-img-cont">
-                            <img src="/logo.png" className="img-foot"  style={{'width':'100px', "height":'30px','objectFit':'contain'}}alt="logo" />
+                            <img src={'/logo.png'} className="img-foot"  style={{'width':'100px', "height":'30px','objectFit':'contain'}}alt="logo" />
                             <p style={{ "justifyContent": 'flex-start' , textAlign: 'left'}}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </p>
-                            <div className='footersocial'>
+                            <div className=' container footersocial  row align-items-start '>
                             <div><FaFacebook /> Riztup</div>
                             <div><FaInstagram /> Riztup</div>
                             <div><FaTwitter /> Riztup</div>
@@ -146,7 +147,7 @@ const Footer = () => {
     </div>
 
     <div className="border-top p-0 foot-content">
-        <div className="container-fluid container-fluid-90 justify-content-between p-2 foot-padding">
+        <div className="container-fluid container-fluid-90 justify-content-between p-2 foot-padding ">
             <div className="row">
                 <div className="col-lg-6 col-sm-6 mb-0 mt-4 mb-4 text-14 sv_copyright">
                     © 2023 Reztup. All Rights Reserved

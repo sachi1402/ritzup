@@ -1,18 +1,43 @@
+.my-component{
+  width:100vw;
+  // background-color: red;
+  padding-top: 40px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content:flex-start ;
+
+}
 #wrappedNav {
   display: flex;
   align-items: center;
-  height: 8vh;
-  background-color: rgba(255, 255, 255, 0.582);
+  height: 100px;
+  // background-color: rgba(255, 255, 255, 0.582);
+  background-color: rgba(255, 255, 255, 0);
   justify-content: space-around;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
   transition: all 0.2s;
-  border-bottom: 1px solid rgb(179, 179, 179);
+  align-self: center;
+  
+  // border-bottom: 1px solid rgb(179, 179, 179);
+  
   img {
     width: 8vw;
   }
+  .nav-logo{
+    color: #F1450E;
+    font-size: 29px;
+    font-family: Roboto;
+    font-weight: 800;
+    line-height: 18px;
+
+  }
+
   
+z-index: 999;
+overflow-x:non; 
 }.scrolled {
     /* Add your desired styles for the scrolled state */
     background-color: #ffffff;
@@ -20,7 +45,9 @@
     /* ... Add any other styles you want */
   }
   
-
+.nav-logo{
+  width: 10vh;
+}
 .Nav-seacrh-container {
   display: flex;
   position: relative;
@@ -28,11 +55,11 @@
   align-items: center;
 //   gap: 40px;
   color: #9c9c9c;
-  border: 0.5px solid #f1450e;
+  border: 0.5px solid #f1470e45;
   box-shadow: 0px -2px 4px rgba(207, 207, 207, 0.25),
     0px 3px 4px rgba(163, 159, 159, 0.25);
   border-radius: 8px;
-  padding: 8px 30px;
+  padding: 8px 10px;
 
   box-sizing: border-box;
 
@@ -66,6 +93,13 @@
     align-items: center;
 
     color: #222222;
+    span{
+      color: #717171;
+      font-size: 16px;
+      font-weight: 300;
+      font-family: Roboto;
+      line-height: 22px;
+    }
   }
   .Nav-searc-buttion-gray {
     font-weight: 400;
@@ -84,19 +118,25 @@
     /* top: 0px; */
     color: #fff;
     border: none;
-    padding: 4px 17px;
+    padding: 4px 5px;
     background: #f1450e;
     border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: bold;
   }
 }
 
 .Nav-filter-container {
   display: flex;
-  justify-content: space-evenly;
-  gap: 10px;
+  justify-content: center;
+  gap: 15px;
   align-items: center;
   font-size: 1rem;
   border: none;
+  color: #DDDDDD;
+  margin-left:30px ;
   /* color:  #DDDDDD; */
 
   .Nav-filter-tool {
@@ -105,10 +145,10 @@
     border: 0.4px #F1450E solid;
     border-radius:8px; */
     /* position: absolute; */
-    background-color: #f5f5f5;
+    background-color: #ffff;
     width: 56px;
     height: 48px;
-    font-size: 2rem;
+    font-size: 1.2rem;
     border: none;
     box-shadow: 0px -2px 4px rgba(207, 207, 207, 0.25),
       0px 3px 4px rgba(163, 159, 159, 0.25);
@@ -121,7 +161,7 @@
   }
   .Nav-filter-Careers {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #fff;
     padding: 11px 22px;
     border-radius: 8px;
@@ -148,16 +188,21 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
     margin: 0;
 }
 
 .Nav-profile-title{
     margin: 0;
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1em;
     display: flex;
     align-items: center;
     color: #000000;
+    padding: 11px 25px;
+    border: 1px solid hsla(15, 89%, 50%, 0.2);
+    border-radius: 15px;
+    // margin-left: -20% ;
 }
 .Nav-profile-title > span{
     color: #F1450E;
@@ -183,12 +228,16 @@
 
 .Nav-profile-icon{
     font-size:1.5em;
+    margin-top: -10px;
+    font-weight: 800;
+    // margin-left: -20px;
     color:#000000;
 }
 
 #thirdcomp {
     display: flex;
     align-items: center;
+    margin-left: -10%;
 }
 
 
@@ -196,5 +245,8 @@
 .scrolled {
     #wrappedNav {
         background-color: white;
+        box-shadow: 0px 3px 4px 0px rgba(163, 159, 159, 0.25), 0px -2px 4px 0px rgba(207, 207, 207, 0.25);
+        
+        
     }
 }

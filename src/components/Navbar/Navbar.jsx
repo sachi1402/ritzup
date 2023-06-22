@@ -27,29 +27,36 @@ const Navbar = () => {
   }, []);
   return (
     <>
-      <nav className={`my-component ${scrollClass}`}>
+      <nav className={`row d-flex  my-component ${scrollClass}` }>
         <div id="wrappedNav">
-          <img src="logo.png" alt="" />
-          <div className="Nav-seacrh-container">
-            <button className="Nav-searc-buttion-black">Location</button>|
-            <button className="Nav-searc-buttion-black">Date/Time</button>|
-            <button className="Nav-searc-buttion-gray"><span>Add guest</span></button>
-            |
-            <button className="Nav-searc-buttion-search">
+          {/* <img src="logo.png" alt="" /> */}
+          <h1 className="nav-logo" >Reztup</h1>
+          <div className=" d-flex">
+          { scrollClass!== "" &&<div className="row d-flex justify-content-center aline-item-center Nav-seacrh-container">
+            <button className=" col  Nav-searc-buttion-black">Location</button>|
+            <button className="col   Nav-searc-buttion-black">Date/Time</button>|
+            <button className="col Nav-searc-buttion-black"><span>Add guest</span></button>
+            
+            {/* <div  className="col d-flex jusify-content-center "> */}
+            <button className=" active Nav-searc-buttion-search">
               <BsSearch />
             </button>
-          </div>
-          <div className="Nav-filter-container">
+            {/* </div> */}
+          </div>}
+          { scrollClass!== "" &&<div className="Nav-filter-container">
             <button className="Nav-filter-tool">
               <IoOptionsOutline />
             </button>
-            <button className="Nav-filter-Careers">Careers</button>
-          </div>
-          <div id="thirdcomp">
-            <div className="Nav-profile-container">
-              <h2 className="Nav-profile-title">
+            <button className="Nav-filter-Careers">Careers</button>|
+            <h2 className="Nav-profile-title">
                 <span>Reztup</span> Your Home
               </h2>
+          </div>}
+          </div>
+
+          <div id="thirdcomp">
+            <div className="Nav-profile-container">
+              
               <div className="Nav-profile-details-container">
                 <img
                   src={

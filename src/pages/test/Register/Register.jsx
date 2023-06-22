@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import "./Login.scss";
+// import "./Login.scss";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import logo from "../../Assets/Images/logo.png";
 // import banner from "../../Assets/Images/login.png";
+import './../Login/Login'
 import { useNavigate } from "react-router-dom";
 import { FaApple, FaEnvelope } from "react-icons/fa";
 const Register = () => {
@@ -50,13 +51,14 @@ const Register = () => {
   };
 
   return (
-    <section className="vh-100">
+    <div>
+    <section className="vh-100 d-flex">
       <div className="container-fluid">
         <div className="row">
           <div id="leftcompo" className="col-sm-6 text-black">
             <div className="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-xl-0 mt-xl-n5">
               <form onSubmit={handleSubmit}>
-                <img id="topLogo" src={logo} alt="" />
+                <img id="topLogo" src={'/google icon.png'} alt="" />
                 <h3 className="fw-normal mb-3 pb-3">Create an account</h3>
                 <p>Let's get started with your journey</p>
                 <div className="row">
@@ -161,11 +163,12 @@ const Register = () => {
             style={{ background: "#F1450E" }}
             className="Login-Left-img-cont"
           >
-            <img src={banner} alt="Banner image" className="w-100 vh-100" />
+            <img src={'https://wallpaperaccess.com/full/2690549.jpg'} alt="Banner image" className="w-100 vh-100" />
           </div>
         </div>
       </div>
     </section>
+    </div>
   );
 };
 
