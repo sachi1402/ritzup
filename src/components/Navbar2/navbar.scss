@@ -1,0 +1,252 @@
+.my-component{
+  width:100vw;
+  // background-color: red;
+  padding-top: 40px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content:flex-start ;
+
+}
+#wrappedNav {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  // background-color: rgba(255, 255, 255, 0.582);
+  background-color: rgba(255, 255, 255, 0);
+  justify-content: space-around;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  transition: all 0.2s;
+  align-self: center;
+  
+  // border-bottom: 1px solid rgb(179, 179, 179);
+  
+  img {
+    width: 8vw;
+  }
+  .nav-logo{
+    color: #F1450E;
+    font-size: 29px;
+    font-family: Roboto;
+    font-weight: 800;
+    line-height: 18px;
+
+  }
+
+  
+z-index: 999;
+overflow-x:non; 
+}.scrolled {
+    /* Add your desired styles for the scrolled state */
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* ... Add any other styles you want */
+  }
+  
+.nav-logo{
+  width: 10vh;
+}
+.Nav-seacrh-container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+//   gap: 40px;
+  color: #9c9c9c;
+  border: 0.5px solid #f1470e45;
+  box-shadow: 0px -2px 4px rgba(207, 207, 207, 0.25),
+    0px 3px 4px rgba(163, 159, 159, 0.25);
+  border-radius: 8px;
+  padding: 8px 10px;
+
+  box-sizing: border-box;
+
+  /* position: absolute; */
+  width: 35vw;
+  height: 48px;
+  /* left: 228px; */
+  /* top: 25px; */
+
+  background: #ffffff;
+  border: 0.5px solid #f1450e;
+  box-shadow: 0px -2px 4px rgba(207, 207, 207, 0.25),
+    0px 3px 4px rgba(163, 159, 159, 0.25);
+  border-radius: 8px;
+
+  .Nav-searc-buttion-black {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #222222;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+
+    display: flex;
+    align-items: center;
+
+    color: #222222;
+    span{
+      color: #717171;
+      font-size: 16px;
+      font-weight: 300;
+      font-family: Roboto;
+      line-height: 22px;
+    }
+  }
+  .Nav-searc-buttion-gray {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #717171;
+  }
+  .Nav-searc-buttion-search {
+    /* position: absolute; */
+    width: 47px;
+    height: 32px;
+    /* left: 446px; */
+    /* top: 0px; */
+    color: #fff;
+    border: none;
+    padding: 4px 5px;
+    background: #f1450e;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: bold;
+  }
+}
+
+.Nav-filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  font-size: 1rem;
+  border: none;
+  color: #DDDDDD;
+  margin-left:30px ;
+  /* color:  #DDDDDD; */
+
+  .Nav-filter-tool {
+    /* padding:12px ;
+    background-color: transparent;
+    border: 0.4px #F1450E solid;
+    border-radius:8px; */
+    /* position: absolute; */
+    background-color: #ffff;
+    width: 56px;
+    height: 48px;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: 0px -2px 4px rgba(207, 207, 207, 0.25),
+      0px 3px 4px rgba(163, 159, 159, 0.25);
+    border-radius: 8px;
+    /* left: 811px; */
+    /* top: 25px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Nav-filter-Careers {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    padding: 11px 22px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f1450e;
+    /* position: absolute; */
+    width: 100px;
+    height: 40px;
+    /* left: 897px; */
+    /* top: 29px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.8vw ;
+  }
+  button:focus {
+    border: 1px solid red;
+    outline-color: transparent;
+  }
+}
+
+
+.Nav-profile-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.Nav-profile-title{
+    margin: 0;
+    font-weight: 600;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    padding: 11px 25px;
+    border: 1px solid hsla(15, 89%, 50%, 0.2);
+    border-radius: 15px;
+    // margin-left: -20% ;
+}
+.Nav-profile-title > span{
+    color: #F1450E;
+}
+.Nav-profile-details-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 2vw;
+    margin: 0 0.8vw 0 0.8vw ;    
+    height:2vw;
+    width: 2vw;
+    background-color: #95bbdf;
+    border-radius: 100%;
+}
+.Nav-profile-details-container>img{
+    height:1.5vw;
+    width: 1.5vw;
+    object-fit: contain;
+    border-radius: 50%;
+    
+}
+
+.Nav-profile-icon{
+    font-size:1.5em;
+    margin-top: -10px;
+    font-weight: 800;
+    // margin-left: -20px;
+    color:#000000;
+}
+
+#thirdcomp {
+    display: flex;
+    align-items: center;
+    margin-left: -10%;
+}
+
+
+// css for scrolled navbar 
+.scrolled {
+    #wrappedNav {
+        background-color: white;
+        box-shadow: 0px 3px 4px 0px rgba(163, 159, 159, 0.25), 0px -2px 4px 0px rgba(207, 207, 207, 0.25);
+        
+        
+    }
+}
